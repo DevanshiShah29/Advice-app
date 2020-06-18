@@ -1,0 +1,74 @@
+#root, html, body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.app{
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.2 ),rgba(0,0,0,0.2 )), url('https://images.unsplash.com/photo-1588696191779-61dde1b83475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80');
+    background-size: cover;
+    background-position: top;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.card{
+    background-color: whitesmoke;
+    width: 60%;
+    height: 30%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding:20px;
+    box-shadow: 10px 10px;
+    border-radius: 25px;
+
+}
+
+.heading{
+    display:flex;
+    align-items: center;
+    font-family: 'Satisfy', cursive;
+
+}
+
+.button {
+    background:pink;
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+    outline:none;
+  }
+  
+  /* Hover state animation applied here */
+  .button:hover { 
+    background:rgb(252, 137, 156);
+  }
+
+
+.img{
+    height:100px;
+    width:100px;
+}
+@media only screen and ( max-width: 767px ){
+    .card{
+        width: 80%;
+        height:30%;
+    }
+}
+@media only screen and ( max-width: 400px ){
+    .card{
+        width: 80%;
+        height:50%;
+    }
+}
